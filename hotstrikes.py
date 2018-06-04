@@ -39,8 +39,10 @@ if __name__ == '__main__':
 
 
     def print_opt(o):
-        print('\tPROD={:<4} STRIKE={:<6} VOL={:<6} SETTLE={:<8}'.format(o['PRODUCT SYMBOL'], o['STRIKE'], o['EST. VOL'],
-                                                                        o['SETTLE']))
+        print('\tPROD={:<4} STRIKE={:<6} VOL={:<6} LAST={:<6} SETTLE={:<8}'.format(o['PRODUCT SYMBOL'], o['STRIKE'],
+                                                                                   o['EST. VOL'],
+                                                                                   o['LAST'],
+                                                                                   o['SETTLE']))
 
 
     # map(print_opt, sorted_calls[:10])
